@@ -1,0 +1,6 @@
+module ActionStatuses
+  TRANSACTION_OK = 0
+  PRODUCT_IS_OUT_OF_STOCK = -1
+  NOT_ENOUGH_CASH = -2
+  NOT_ENOUGH_CHANGE = -3
+end
