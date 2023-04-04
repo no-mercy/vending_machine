@@ -11,7 +11,7 @@ products_to_load = [
 ]
 coins_to_load = [0.25, 0.5, 1, 2, 3, 5]
 
-products_to_load.each { |type| 5.times { vending_machine.product_storage.put(Product.new(type)) } }
+products_to_load.each { |type| 5.times { vending_machine.product_storage.put(Product.new(**type)) } }
 coins_to_load.each { |type| 5.times { vending_machine.coin_changer.deposit(Coin.new(type)) } }
 
 vending_machine.start!
