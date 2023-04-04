@@ -41,7 +41,7 @@ class UserInterface
       vending_machine.put_coin(coin)
       puts "You have inserted coin with amount of #{amount}, your current balance is #{vending_machine.current_balance}"
     else
-      puts 'Wrong coin amount, command example: >>i 0.25'
+      puts "Wrong coin amount, correct coin amounts are #{VALID_COIN_VALUES}, command example: >>i 0.25"
     end
   end
 
