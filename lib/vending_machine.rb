@@ -60,6 +60,6 @@ class VendingMachine
   end
 
   def change_amount(product_code)
-    coin_acceptor.sum(&:value) - product_storage.product_price(product_code)
+    current_balance - product_storage.product_price(product_code)
   end
 end
